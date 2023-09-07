@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center">Shopping Section</h2>
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h3 class="section-heading">Fruit</h3>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/fruit.png" class="card-img-top" alt="Fruit">
+          <div class="card-body">
+            <h5 class="card-title">T’tu Lavash</h5>
+            <p class="card-text">5$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('T’tu Lavash', 5)">Buy</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/pomegranate.png" class="card-img-top" alt="Pomegranate">
+          <div class="card-body">
+            <h5 class="card-title">Pomegranate</h5>
+            <p class="card-text">2.5$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Pomegranate', 2.5)">Buy</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/dried fruit.png" class="card-img-top" alt="Dried Fruit">
+          <div class="card-body">
+            <h5 class="card-title">Dried Fruit</h5>
+            <p class="card-text">3.5$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Dried Fruit', 3.5)">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h3 class="section-heading">Beverages</h3>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/ararat.jpg" class="card-img-top" alt="Ararat">
+          <div class="card-body">
+            <h5 class="card-title">Ararat</h5>
+            <p class="card-text">10$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Ararat', 10)">Buy</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/oghi.jpg" class="card-img-top" alt="oghi">
+          <div class="card-body">
+            <h5 class="card-title">Oghi</h5>
+            <p class="card-text">7$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Oghi', 7)">Buy</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/wine.png" class="card-img-top" alt="wine">
+          <div class="card-body">
+            <h5 class="card-title">Wine</h5>
+            <p class="card-text">9$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Wine', 9)">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h3 class="section-heading">Food</h3>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/Basterma.jpg" class="card-img-top" alt="Basterma">
+          <div class="card-body">
+            <h5 class="card-title">Basterma</h5>
+            <p class="card-text">20$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Basterma', 20)">Buy</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/Mante.jpg" class="card-img-top" alt="Mante">
+          <div class="card-body">
+            <h5 class="card-title">Mante</h5>
+            <p class="card-text">12$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Mante', 12)">Buy</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-md-4" *ngIf="isLoggedIn">
+        <div class="card">
+          <img src="../../assets/Pictures/Shopping/Itch.png" class="card-img-top" alt="Itch">
+          <div class="card-body">
+            <h5 class="card-title">Itch</h5>
+            <p class="card-text">6$</p>
+<!-- "Buy" button with the click event handler calling the "buyProduct" function -->
+<button class="btn btn-primary" (click)="buyProduct('Itch', 6)">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add a new div to display the purchase message -->
+  <div class="row mt-2" *ngIf="purchaseSuccess">
+    <div class="col-md-12">
+      <div class="alert alert-success" role="alert">
+        {{ purchaseMessage }}
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>

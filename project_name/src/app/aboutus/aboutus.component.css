@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f57c00;
+    color: #fff;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    background-color: #f57c00; /* Default orange color */
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add smooth transition */
+    border: none; /* Remove the border */
+}
+
+/* Hover styles for the orange buttons */
+.hero .btn:hover,
+.contact .btn:hover {
+    background-color: #ffa500; /* Brighter orange on hover */
+    color: #fff;
+}
+
+/* Our Goal Section */
+.goals {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #f57c00;
+    padding-bottom: 10px;
+}
+
+.goals p {
+    font-size: 18px;
+}
+
+/* Meet the Chefs Section */
+.meet-the-chefs {
+    padding: 60px 0;
+}
+
+.meet-the-chefs .section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #f57c00;
+    padding-bottom: 10px;
+}
+
+.chef {
+    position: relative;
+}
+
+.chef img {
+    display: block;
+    width: 100%;
+    height: 400px; /* Set the desired height for the chef images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Rounded images */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 10px; /* Rounded overlay */
+}
+
+.chef:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact .section-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f57c00;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Message Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    font-size: 18px;
+}

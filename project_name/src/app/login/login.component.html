@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- login.component.html -->
+
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-6">
+          <div class="login-container">
+            <img src="../../assets/Pictures/Logo/logo resized.png" alt="Logo" class="logo">
+              <h3>Login</h3>
+              <form (ngSubmit)="onLogin()" autocomplete="off">
+                  <div class="form-group">
+                    <label for="usernameEmail">Username or Email</label>
+                    <input type="text" class="form-control" id="usernameEmail" name="usernameEmail" placeholder="Enter your username or email" [(ngModel)]="loginData.usernameEmail" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" [(ngModel)]="loginData.password" required>
+                  </div>
+                  <button type="submit" class="login-btn btn-block">Login</button>
+
+                  <!-- Show success or error message -->
+                  <div *ngIf="loginSuccessMessage" class="alert alert-success mt-3">{{ loginSuccessMessage }}</div>
+                  <div *ngIf="loginErrorMessage" class="alert alert-danger mt-3">{{ loginErrorMessage }}</div>                    
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

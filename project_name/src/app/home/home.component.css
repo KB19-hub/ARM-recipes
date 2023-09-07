@@ -1,0 +1,229 @@
+/* Hero Section */
+.hero {
+  background-color: #f57c00;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #f57c00;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove the border */
+}
+
+.cta-button:hover {
+  background-color: #f9a825;
+  color: #fff;
+}
+
+/* Add the background color for the featured recipe section */
+.featured-recipes {
+  background-color: #f5b85e;
+  padding: 50px 0;
+}
+
+.featured-recipes h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust the hero section for smaller screens */
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  /* Adjust the featured recipes section for smaller screens */
+  .featured-recipes h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust the hero section for even smaller screens */
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  /* Adjust the featured recipes section for tiny screens */
+  .featured-recipes h3 {
+    font-size: 20px;
+  }
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.recipe-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Apply border-radius to the image */
+  border: 3px solid #f57c00;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(0, 140, 186, 0.7);
+  transition: opacity 0.5s ease;
+}
+
+.recipe-card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text .card-title {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text a.btn-primary {
+  background-color: #fff;
+  color: #008CBA;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.text a.btn-primary:hover {
+  background-color: #008CBA;
+  color: #fff;
+}
+
+/* News and Tips Section */
+.news-and-tips {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.news-and-tips h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.news-card {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 3px solid #f57c00;
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.news-content {
+  padding: 20px;
+  background-color: #e9e3e3;
+}
+
+.news-content h4 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.see-all-news {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Button Styling */
+.btn {
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f57c00;
+}
+
+.btn-primary:hover {
+  background-color: #f9a825;
+}

@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8de;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+h2 {
+  padding-top: 50px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.section-heading {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.card-img-top {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  /* Add a fixed height to all card images */
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* This ensures the images maintain aspect ratio */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f57c00; /* Set the background color to orange */
+  color: #fff; /* Set the text color to white */
+  border: none; /* Remove the default button border */
+  padding: 10px 15px; /* Adjust the padding for a better appearance */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e64a00; /* Change the button color on hover */
+}

@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div *ngFor="let card of newsTips" class="card">
+    <div class="card-header">
+      <h2>{{ card.title }}</h2>
+    </div>
+    <div class="card-body">
+      <img [src]="card.imageUrl" alt="News&Tips">
+      <p *ngIf="!card.readMore">{{ card.content.substring(0, 100) }}...</p>
+      <p *ngIf="card.readMore">{{ card.content }}</p>
+      <button (click)="toggleReadMore(card)" class="read-more-btn">{{ card.readMore ? 'Read less' : 'Read more' }}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 80px;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .occasion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .occasion img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .occasion-text {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .occasion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .occasion p {
+    font-size: 16px;
+  }
+  

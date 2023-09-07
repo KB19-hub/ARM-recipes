@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="heading">Delicious Recipes</h1>
+  <div class="recipe-cards">
+    <div *ngFor="let recipe of recipes" class="recipe-card">
+      <img [src]="recipe.image" alt="{{ recipe.title }}">
+      <h2 class="recipe-title">{{ recipe.title }}</h2>
+      <h3 class="section-heading">Ingredients</h3>
+      <ul class="ingredient-list">
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+      </ul>
+      <h3 class="section-heading">Instructions</h3>
+      <ol class="instruction-list">
+        <li *ngFor="let step of recipe.instructions">{{ step }}</li>
+      </ol>
+    </div>
+  </div>
+
+<!-- Place for user review -->
+<div class="user-review-section">
+  <h2>Write a Review</h2>
+  <form (submit)="submitReview(userName.value, userReview.value)">
+    <label for="user-name">Name:</label>
+    <input type="text" id="user-name" name="user-name" required #userName>
+
+    <label for="user-review">Review:</label>
+    <textarea id="user-review" name="user-review" rows="4" required #userReview></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <!-- Display the sign-in message -->
+  <div *ngIf="showSignInMessage" class="sign-in-message">
+    Please sign in to submit a review.
+    <button (click)="hideSignInMessage()">Close</button>
+  </div>
+
+  <!-- Display success message when review is submitted successfully -->
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+</div>

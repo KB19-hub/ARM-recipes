@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(50% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+  border: 1px solid #e28800d1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 10px;
+  background-color: #f68819e5;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Default button style */
+.read-more-btn {
+background-color: #ffae00;
+color: #fff;
+border: none;
+padding: 8px 16px;
+cursor: pointer;
+}
+
+/* Responsive style for smaller screens (up to 576px) */
+@media (max-width: 576px) {
+.read-more-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+}
+
+/* Responsive style for medium screens (between 577px and 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+.read-more-btn {
+  padding: 8px 14px;
+  font-size: 16px;
+}
+}
+
+/* Add more media queries for other screen sizes as needed */

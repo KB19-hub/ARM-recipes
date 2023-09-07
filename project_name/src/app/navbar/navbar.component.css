@@ -1,0 +1,17 @@
+/* Custom CSS for the navbar background color */
+.navbar {
+  background-color: #FFA500; /* Replace #FFA500 with your desired color */
+}
+/* Custom CSS for navbar hover effect */
+.navbar-nav li.nav-item:hover .nav-link {
+    color: #000000; /* Change the text color to black on hover */
+  }
+  
+  .navbar-nav li.nav-item:hover .nav-link::after {
+    content: ""; /* Create a pseudo-element to display a line at the bottom of the link on hover */
+    display: block;
+    height: 2px;
+    background-color: #000000; /* Change the line color to black on hover */
+    margin-top: 2px; /* Adjust the distance between the link text and the line */
+  }
+  
